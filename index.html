@@ -6,13 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    <img id="kok" src="img/UAZ_2206_orange_standard_force_0.png" alt="Girl in a jacket">
+    <img id="kok" src="img/UAZ_2206_orange_standard_force_0.png" alt="uazik">
     <button type="button" onclick="myFunction()">Click Me!</button>
+    <button type="button" onclick="dark_green()">Green color!</button>
+    <button type="button" onclick="grey()">Grey!</button>
     <script>
         var angle = 0;
+        var paint = 'orange';
+     function dark_green(){
+        paint="dark-green";
+        myFunction();
+     }
+     function grey(){
+        paint = "grey";
+        myFunction();
+     }
+    
      function myFunction() {
         angle += 5;
-        document.getElementById("kok").src = "img/UAZ_2206_orange_standard_force_" + angle + ".png";
+        document.getElementById("kok").src = "img/UAZ_2206_" + paint + "_standard_force_" + angle + ".png";
      }   
         
     </script>
