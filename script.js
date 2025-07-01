@@ -102,5 +102,5 @@ bumper_slider.oninput = function () {
 
 
 function load_buchanka() {
-    document.getElementById("img-placeholder").src = "img/UAZ_2206_" + current_color + "_" + current_roof + "_" + current_bumper + "_" + current_angle + ".png";
+    document.getElementById("img-placeholder").src = "img/UAZ_2206_" + current_color + "_" + current_roof + "_" + current_bumper + "_" + current_angle + ".jpeg";
 }  
