@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="container">
+      <div class="nav-left">
+         <h1>UAZ 2206 Configurator</h1>
+         <h2>Bumpers:</h2>
+
+         <div id="bumper-wrapper">
+            <p id="standard-bumper">Standard</p>
+            <input id="bumper-slider" type="range" min="1" max="2" value="1">
+            <p id="force-bumper" style="color: rgb(129, 129, 129);">Force</p>
+         </div>
+         <h2>Select your roof type:</h2>
+         <div class="btn-group-vertical">
+            <button id="standard" class="btn-roof-active" type="button"
+               onclick="change_roof('standard')">Standard</button>
+            <button id="high" class="btn-roof" type="button" onclick="change_roof('high')">High</button>
+            <button id="folding-unfolded" class="btn-roof" type="button"
+               onclick="change_roof('folding-unfolded')">Folding</button>
+            <button id="roof-rack" class="btn-roof" type="button" onclick="change_roof('roof-rack')">Roof rack</button>
+         </div>
+      </div>
+      <div class="options">
+         <div id="options-wrapper">
+            <div class="btn-group-horizontal">
+               <div id="orange-color" class="color-btn-selected" onclick="change_color('orange')"></div>
+               <div id="green-color" class="color-btn" onclick="change_color('dark-green')"></div>
+               <div id="green-white-color" class="color-btn" onclick="change_color('green-white')"></div>
+               <div id="orange-white-color" class="color-btn" onclick="change_color('orange-white')"></div>
+            </div>
+         </div>
+      </div>
+      <div class="img">
+         <i id="arrow-right" class="fa fa-angle-right" onclick="change_angle('plus')"
+            style="font-weight:bold;font-size:10vh;"></i>
+         <i id="arrow-left" class="fa fa-angle-left" onclick="change_angle('minus')"
+            style="font-weight:bold;font-size:10vh;"></i>
+         <img id="img-placeholder" src="img\UAZ_2206_orange_standard_standard_0.png" alt="Uaz_Buchanka" width="85%"
+            height="100%" style="margin-left: 5%;">
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+
+</html>
