@@ -1,5 +1,5 @@
 var current_angle_position = 0;
-var available_angles = [0, 40, 47, 75, 135, 170, 200, 315]
+var available_angles = [0,30,60,90,120,150,180,210,240,270,300,300,330]
 var current_color = 'orange';
 var current_bumper = 'standard';
 var current_roof = 'standard';
